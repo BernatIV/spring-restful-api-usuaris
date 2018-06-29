@@ -1,6 +1,7 @@
 package com.usuaris.springrestfulapiusuaris.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.Size;
 
 @Entity
 public class User {
@@ -9,8 +10,10 @@ public class User {
     private Long id;
 
     @Column(unique = true)
+    @Size(min = 8, max = 20)
     private String username;
-
+    
+    @Column(length = 100)
     private String password;
 
     public User() {
