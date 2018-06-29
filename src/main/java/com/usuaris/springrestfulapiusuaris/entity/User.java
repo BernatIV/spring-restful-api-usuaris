@@ -12,7 +12,7 @@ public class User {
     @Column(unique = true)
     @Size(min = 8, max = 20)
     private String username;
-    
+
     @Column(length = 100)
     private String password;
 
