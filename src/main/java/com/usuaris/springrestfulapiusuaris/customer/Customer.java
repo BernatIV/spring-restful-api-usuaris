@@ -1,4 +1,4 @@
-package com.usuaris.springrestfulapiusuaris.entity;
+package com.usuaris.springrestfulapiusuaris.customer;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
@@ -6,13 +6,14 @@ import javax.validation.constraints.Size;
 @Entity
 public class Customer {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Genera automàticament l'Id
     private Long id;
 
     @Column(unique = true)
     @Size(min = 8, max = 20)
     private String customername;
 
+    // Fer que no pugui ser null
     private boolean active; // Si és un client actiu
 
     public Customer() {

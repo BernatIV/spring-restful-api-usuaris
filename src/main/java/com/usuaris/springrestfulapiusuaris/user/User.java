@@ -1,4 +1,4 @@
-package com.usuaris.springrestfulapiusuaris.entity;
+package com.usuaris.springrestfulapiusuaris.user;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;

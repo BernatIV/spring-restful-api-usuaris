@@ -1,6 +1,5 @@
-package com.usuaris.springrestfulapiusuaris.repository;
+package com.usuaris.springrestfulapiusuaris.user;
 
-import com.usuaris.springrestfulapiusuaris.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

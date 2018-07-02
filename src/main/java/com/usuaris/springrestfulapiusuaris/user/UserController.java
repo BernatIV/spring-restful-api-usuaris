@@ -1,13 +1,12 @@
-package com.usuaris.springrestfulapiusuaris.controller;
+package com.usuaris.springrestfulapiusuaris.user;
 
-import com.usuaris.springrestfulapiusuaris.entity.User;
-import com.usuaris.springrestfulapiusuaris.repository.UserRepository;
+import com.usuaris.springrestfulapiusuaris.user.User;
+import com.usuaris.springrestfulapiusuaris.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import javax.servlet.Servlet;
 import java.net.URI;
 import java.util.List;
 import java.util.Optional;

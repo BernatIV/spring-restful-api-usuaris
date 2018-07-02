@@ -1,6 +1,6 @@
-package com.usuaris.springrestfulapiusuaris.repository;
+package com.usuaris.springrestfulapiusuaris.customer;
 
-import com.usuaris.springrestfulapiusuaris.entity.Customer;
+import com.usuaris.springrestfulapiusuaris.customer.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
