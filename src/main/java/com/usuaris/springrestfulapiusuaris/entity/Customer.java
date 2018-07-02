@@ -7,20 +7,20 @@ import javax.validation.constraints.Size;
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     @Column(unique = true)
     @Size(min = 8, max = 20)
-    private String customerName;
+    private String customername;
 
     private boolean active; // Si és un client actiu
 
     public Customer() {
     }
 
-    public Customer(long id, String customerName, boolean active) {
+    public Customer(long id, String customername, boolean active) {
         this.id = id;
-        this.customerName = customerName;
+        this.customername = customername;
         this.active = active;
     }
 
@@ -32,12 +32,12 @@ public class Customer {
         this.id = id;
     }
 
-    public String getCustomerName() {
-        return customerName;
+    public String getCustomername() {
+        return customername;
     }
 
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
+    public void setCustomername(String customername) {
+        this.customername = customername;
     }
 
     public boolean isActive() {
