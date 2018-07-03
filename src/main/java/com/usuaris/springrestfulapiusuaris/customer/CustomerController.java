@@ -12,6 +12,9 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/customers")
 public class CustomerController {
+
+    // Al tanto! En l'exemlpe spring-boot-auth (connexió segura) no fa servir @Autowired sinó un constructor per omplir CustomerRepository.
+
     @Autowired
     private CustomerRepository customerRepository;
 
