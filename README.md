@@ -7,9 +7,19 @@ Passos seguits per crear la Restful API amb Spring Boot:
 2. Amb IntelliJ IDEA modificar application.properties, i crear import.sql que contindrà els registres de cada entitat quan inicies l'applicació. 
 ...
 
-Passos per fer correr l'app amb Postman:
-1. curl -H "Content-Type: application/json" -X POST -d '{
+Fer funcionar l'app amb Curl: (amb postman és el mateix però a nivell gràfic). 
+1. Registrar-te com a usuari: 
+curl -H "Content-Type: application/json" -X POST -d '{
     "username": "admin",
     "password": "password"
 }' http://localhost:8080/users/sign-up
+2. Loguejar-te amb l'usuari: 
+curl -i -H "Content-Type: application/json" -X POST -d '{
+    "username": "admin",
+    "password": "password"
+}' http://localhost:8080/login
 
+
+
+Fonts: 
+https://auth0.com/blog/implementing-jwt-authentication-on-spring-boot/
