@@ -4,22 +4,22 @@ import javax.persistence.*;
 import javax.validation.constraints.Size;
 
 @Entity
-public class User {
+public class ApplicationUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(unique = true)
-    @Size(min = 8, max = 20)
+    @Size(min = 4, max = 20) // Hauria de ser min 8 però suda
     private String username;
 
     @Column(length = 100)
     private String password;
 
-    public User() {
+    public ApplicationUser() {
     }
 
-    public User(Long id, String username, String password) {
+    public ApplicationUser(Long id, String username, String password) {
         this.id = id;
         this.username = username;
         this.password = password;

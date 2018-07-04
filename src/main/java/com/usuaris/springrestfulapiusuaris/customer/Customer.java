@@ -13,14 +13,13 @@ public class Customer {
     @Size(min = 8, max = 20)
     private String customername;
 
-    // Fer que no pugui ser null
+    @Column(nullable = false)
     private boolean active; // Si és un client actiu
 
     public Customer() {
     }
 
-    public Customer(long id, String customername, boolean active) {
-        this.id = id;
+    public Customer(String customername, boolean active) {
         this.customername = customername;
         this.active = active;
     }

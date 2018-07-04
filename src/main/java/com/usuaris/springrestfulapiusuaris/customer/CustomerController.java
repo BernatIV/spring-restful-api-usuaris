@@ -10,15 +10,19 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/customers")
+@RequestMapping("/customers") // Posar la URI aquí fa que no l'haguem de repetir cada vegada.
 public class CustomerController {
 
-    // Al tanto! En l'exemlpe spring-boot-auth (connexió segura) no fa servir @Autowired sinó un constructor per omplir CustomerRepository.
+    // Posant @Autowired també funciona si li trec el constructor
 
-    @Autowired
+//    @Autowired
     private CustomerRepository customerRepository;
 
-    @GetMapping("")
+    public CustomerController(CustomerRepository customerRepository) {
+        this.customerRepository = customerRepository;
+    }
+
+    @GetMapping("") // localhost:8080/customers
     public List<Customer> retrieveAllCustomers() {
         return customerRepository.findAll();
     }

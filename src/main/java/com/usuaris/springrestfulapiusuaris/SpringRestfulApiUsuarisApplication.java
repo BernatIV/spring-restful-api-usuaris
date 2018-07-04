@@ -22,16 +22,7 @@ public class SpringRestfulApiUsuarisApplication {
 }
 
 /*
-COSES A CANVIAR:
-
-- Si no funciona treure l'Autowired de CustomerController
-- Canviar el nom de la classe User per AplicationUser perquè no sigui ambigu amb les dependències de Spring Security.
-
- */
-
-/*
 FONTS:
-
 https://auth0.com/blog/implementing-jwt-authentication-on-spring-boot/
 
  */
