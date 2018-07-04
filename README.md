@@ -19,11 +19,9 @@ curl -i -H "Content-Type: application/json" -X POST -d '{
     "password": "password"
 }' http://localhost:8080/login
 3. Amb el token que hem rebut al loguejar-nos, consultar tots els clients que tenim: 
-curl -H "Content-Type: application/json" \
--H "Authorization: Bearer xxx.yyy.zzz" \
--X POST -d '{
-    "description": "Buy watermelon"
-}'  http://localhost:8080/tasks
+curl -H "Content-Type: application/json"
+-H "Authorization: Bearer xxx.yyy.zzz"
+-X GET http://localhost:8080/customers
 4. També es pot recuperar un sol client, borrar, afegir i actualitzar similarment al punt anterior. 
 
 
