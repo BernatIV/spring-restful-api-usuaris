@@ -10,7 +10,7 @@ Passos seguits per crear la Restful API amb Spring Boot:
 Fer funcionar l'app amb Curl: (amb postman és el mateix però a nivell gràfic). 
 1. Registrar-te com a usuari: 
 curl -H "Content-Type: application/json" -X POST -d '{
-    "username": "admin",
+    "username": "useradmin",
     "password": "password"
 }' http://localhost:8080/users/sign-up
 2. Loguejar-te amb l'usuari: 
@@ -18,7 +18,13 @@ curl -i -H "Content-Type: application/json" -X POST -d '{
     "username": "admin",
     "password": "password"
 }' http://localhost:8080/login
-
+3. Amb el token que hem rebut al loguejar-nos, consultar tots els clients que tenim: 
+curl -H "Content-Type: application/json" \
+-H "Authorization: Bearer xxx.yyy.zzz" \
+-X POST -d '{
+    "description": "Buy watermelon"
+}'  http://localhost:8080/tasks
+4. També es pot recuperar un sol client, borrar, afegir i actualitzar similarment al punt anterior. 
 
 
 Fonts: 
