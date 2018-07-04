@@ -8,5 +8,8 @@ Passos seguits per crear la Restful API amb Spring Boot:
 ...
 
 Passos per fer correr l'app amb Postman:
-1. 
+1. curl -H "Content-Type: application/json" -X POST -d '{
+    "username": "admin",
+    "password": "password"
+}' http://localhost:8080/users/sign-up
 
