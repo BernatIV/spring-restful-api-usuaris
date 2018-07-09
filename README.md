@@ -41,7 +41,10 @@ Conté les configuracions per a l'aplicació.
 ## Build with
 He baixat un projecte Maven de start.spring.io amb les dependències WEB, JPA, H2. 
 
-## Fonts
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
+## Acknowledgments
 - https://auth0.com/blog/implementing-jwt-authentication-on-spring-boot/
 
 - _Per escriure aquest Readme he seguit l'estandard de Git._
