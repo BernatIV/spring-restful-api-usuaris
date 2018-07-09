@@ -42,7 +42,7 @@ Conté les configuracions per a l'aplicació.
 He baixat un projecte Maven de start.spring.io amb les dependències WEB, JPA, H2. 
 
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the GNU General Public License v3.0 - see the LICENSE file for details
 
 ## Acknowledgments
 - https://auth0.com/blog/implementing-jwt-authentication-on-spring-boot/
