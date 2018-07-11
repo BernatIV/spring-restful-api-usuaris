@@ -23,9 +23,16 @@ X GET http://localhost:8080/customers
 ## Què fa cada part del codi?
 ### SpringRestfulApiUsuarisApplication.java
 Inicia l'aplicació i ha de contenir el mínim possible. 
-La funció bCryptPasswordEncoder crea una instància de BCryptPasswordEncoder que UserController necessita per encriptar la contrassenya quan un usuari es registra. 
 
+La funció bCryptPasswordEncoder crea la instància que UserController necessita per encriptar la contrassenya quan un usuari es registra. 
 
+### ApplicationUser.java
+Classe POJO dels usuaris que es registraran i es loguejaran a l'applicació. 
+
+L'anotació @Entity mapeja la classe a una taula SQL. @Id diu quin atribut és el camp id de la taula i @GeneratedValue genera el seu valor automàticament.  
+
+### UserController.java
+Controlador per registrar-se i encriptar. 
 
 ### import.sql
 Omple la _in-memory database_ H2 de registres d'usuaris. 
