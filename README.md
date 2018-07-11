@@ -11,7 +11,7 @@ curl -H "Content-Type: application/json" -X POST -d '{
 }' http://localhost:8080/users/sign-up
 2. Loguejar-te amb l'usuari:
 curl -i -H "Content-Type: application/json" -X POST -d '{
-    "username": "admin",
+    "username": "useradmin",
     "password": "password"
 }' http://localhost:8080/login
 3. Amb el token que hem rebut al loguejar-nos, consultar tots els clients que tenim:
