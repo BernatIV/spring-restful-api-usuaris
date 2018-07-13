@@ -26,13 +26,36 @@ Inicia l'aplicació i ha de contenir el mínim possible.
 
 La funció bCryptPasswordEncoder crea la instància que UserController necessita per encriptar la contrassenya quan un usuari es registra. 
 
-### ApplicationUser.java
+### User
+
+#### ApplicationUser.java
 Classe POJO dels usuaris que es registraran i es loguejaran a l'applicació. 
 
 L'anotació @Entity mapeja la classe a una taula SQL. @Id diu quin atribut és el camp id de la taula i @GeneratedValue genera el seu valor automàticament.  
 
-### UserController.java
+#### UserController.java
 Controlador per registrar-se i encriptar. 
+
+#### UserRepository.java
+
+#### UserDetailsServiceImpl.java
+
+### Customer
+#### Customer.java
+
+#### CustomerController.java
+
+#### CustomerRepository.java
+
+### Security
+#### JWTAuthenticationFilter.java
+
+#### JWTAuthorizationFilter.java
+
+#### SecurityConstants.java
+Constants que es fan servir als filtres autenticació i autorització. 
+
+#### WebSecurity.java
 
 ### import.sql
 Omple la _in-memory database_ H2 de registres d'usuaris. 
